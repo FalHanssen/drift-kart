@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="Kart icon">
+<rect width="192" height="192" rx="36" fill="#16181b"/>
+<circle cx="96" cy="96" r="70" fill="none" stroke="#ffd400" stroke-width="10"/>
+<path d="M64 118 a32 32 0 0 1 64 0" fill="none" stroke="#3ddc84" stroke-width="10" stroke-linecap="round"/>
+<circle cx="68" cy="128" r="10" fill="#e8e8e4"/>
+<circle cx="124" cy="128" r="10" fill="#e8e8e4"/>
+<rect x="78" y="92" width="36" height="18" rx="4" fill="#e8e8e4"/>
+</svg>

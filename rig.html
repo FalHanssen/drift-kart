@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#16181b">
+<meta name="referrer" content="no-referrer">
+<title>Kart tilt rig</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="./ui/rig.css">
+<script type="module" src="./shared/diagnostics.js"></script>
+<script type="module" src="./rig.js"></script>
+</head>
+<body>
+<div id="app" class="app" data-state="title">
+  <canvas id="view" class="view"></canvas>
+
+  <div id="hud" class="hud" hidden>
+    <div id="z-reset" class="zone btn-round zone-reset" role="button" aria-label="Reset kart: hold">
+      <svg class="ring" viewBox="0 0 48 48" aria-hidden="true">
+        <circle class="ring-track" cx="24" cy="24" r="21"/>
+        <circle id="reset-ring" class="ring-fill" cx="24" cy="24" r="21" stroke-dasharray="0 132"/>
+      </svg>
+      <span>Reset</span>
+    </div>
+    <div id="z-pause" class="zone btn-round zone-pause" role="button" aria-label="Pause"><span class="pause-bars"></span></div>
+
+    <div class="topbar">
+      <div id="assist-seg" class="seg" role="radiogroup" aria-label="Assist">
+        <button type="button" role="radio" data-assist="off" aria-checked="false"><b>Off</b></button>
+        <button type="button" role="radio" data-assist="low" aria-checked="true"><b>Low</b><small>0.3</small></button>
+        <button type="button" role="radio" data-assist="med" aria-checked="false"><b>Med</b><small>0.6</small></button>
+        <button type="button" role="radio" data-assist="high" aria-checked="false"><b>High</b><small>0.85</small></button>
+      </div>
+      <div id="setup-seg" class="seg" role="radiogroup" aria-label="Setup">
+        <button type="button" role="radio" data-setup="drift" aria-checked="true">Drift setup</button>
+        <button type="button" role="radio" data-setup="track" aria-checked="false">Track setup</button>
+      </div>
+      <button type="button" id="recentre-btn" class="btn-chip">Re-centre</button>
+    </div>
+
+    <div id="hold" class="hold idle">
+      <div class="hold-head"><span id="hold-state">Drift hold</span><span class="hold-best">Best <span id="hold-best">0.0</span> s</span></div>
+      <div class="hold-value"><span id="hold-value">0.0</span><small> s</small></div>
+      <div class="hold-bar"><i id="hold-fill" class="hold-fill"></i></div>
+    </div>
+
+    <div class="chips">
+      <span id="mode-chip" class="chip">Tilt</span>
+      <span id="slow-chip" class="chip chip-warn" hidden>Slow device</span>
+    </div>
+
+    <div class="gauge">
+      <div class="gauge-row">
+        <svg class="arc" viewBox="0 0 120 66" aria-hidden="true">
+          <path class="arc-track" d="M 10 60 A 50 50 0 0 1 110 60"/>
+          <path class="arc-amber" d="M 10 60 A 50 50 0 0 1 13.02 42.9"/>
+          <path class="arc-green" d="M 13.02 42.9 A 50 50 0 0 1 51.32 10.76"/>
+          <path class="arc-green" d="M 68.68 10.76 A 50 50 0 0 1 106.98 42.9"/>
+          <path class="arc-amber" d="M 106.98 42.9 A 50 50 0 0 1 110 60"/>
+          <line id="arc-needle" class="arc-needle" x1="60" y1="60" x2="60" y2="18"/>
+          <circle class="arc-hub" cx="60" cy="60" r="5"/>
+        </svg>
+        <div class="drift-readout"><b><span id="drift-value">0</span>&deg;</b><small>drift</small></div>
+        <div class="speed-readout"><span id="speed-value">0</span> <small>km/h</small></div>
+      </div>
+      <div class="honesty">Model, not measurement.</div>
+    </div>
+
+    <div id="z-throttle" class="zone strip zone-throttle" role="button" aria-label="Throttle">
+      <i id="thr-raw" class="strip-raw"></i><i id="thr-fill" class="strip-fill"></i><i class="strip-ticks"></i>
+      <span class="strip-label">Throttle</span>
+    </div>
+    <div id="z-brake" class="zone strip zone-brake" role="button" aria-label="Brake">
+      <i id="brk-fill" class="strip-fill"></i><i class="strip-ticks"></i>
+      <span class="strip-label">Brake</span>
+    </div>
+    <div id="z-handbrake" class="zone zone-handbrake" role="button" aria-label="Handbrake"><span>Handbrake</span></div>
+    <div id="z-left" class="zone zone-steer zone-left" role="button" aria-label="Steer left" hidden><span>Left</span></div>
+    <div id="z-right" class="zone zone-steer zone-right" role="button" aria-label="Steer right" hidden><span>Right</span></div>
+
+    <div id="nudge" class="nudge" role="status" hidden></div>
+    <div id="flash" class="flash" role="status" hidden></div>
+  </div>
+
+  <section id="scr-title" class="overlay" aria-label="Start">
+    <div class="panel">
+      <h1>Kart tilt rig</h1>
+      <p class="lead">Steer by turning the phone like a steering wheel. The test: hold a drift on the 10 m circle for 5 seconds.</p>
+      <button type="button" id="start-btn" class="btn-primary" disabled>Loading...</button>
+      <p class="note">Your phone may ask for motion access. Allow it: tilt is the steering.</p>
+      <p class="fine">Model, not measurement. <span class="version"></span></p>
+      <p class="fine boot-fail">Still loading? This browser could not start the rig. Reload the page to try again.</p>
+    </div>
+  </section>
+
+  <section id="scr-checking" class="overlay" aria-label="Starting the sensor" hidden>
+    <div class="panel">
+      <h2>Starting the motion sensor...</h2>
+      <p>If your phone asks for motion access, tap Allow.</p>
+    </div>
+  </section>
+
+  <section id="scr-denied" class="overlay" aria-label="Motion access is off" hidden>
+    <div class="panel">
+      <h2>Motion access is off</h2>
+      <p>Tilt steering needs motion access, and this browser will not ask again on this visit. To be asked again, clear this site's data in the browser settings, or add the page to your Home Screen, which starts fresh.</p>
+      <button type="button" id="touch-btn" class="btn-primary">Use touch steering instead</button>
+      <button type="button" id="retry-btn" class="btn-secondary">Try again</button>
+    </div>
+  </section>
+
+  <section id="scr-calib" class="overlay overlay-light" aria-label="Set the centre" hidden>
+    <div class="panel">
+      <h2>Set the centre</h2>
+      <p id="calib-text">Hold the phone the way you will drive, then tap Set centre and keep still for a second.</p>
+      <div class="level" aria-hidden="true">
+        <div class="level-track"><i class="level-mid"></i><i id="level-bubble" class="level-bubble"></i></div>
+      </div>
+      <p class="level-read">Tilt <span id="level-value">0</span>&deg; from centre</p>
+      <div id="calib-progress" class="progress" hidden><i id="calib-fill"></i></div>
+      <div class="row">
+        <button type="button" id="calib-btn" class="btn-primary">Set centre</button>
+        <button type="button" id="calib-keep" class="btn-secondary" hidden>Keep saved centre</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="scr-pause" class="overlay" aria-label="Paused" hidden>
+    <div class="panel">
+      <h2>Paused</h2>
+      <button type="button" id="resume-btn" class="btn-primary">Resume</button>
+      <div class="row">
+        <button type="button" id="pause-recentre" class="btn-secondary">Re-centre</button>
+        <button type="button" id="pause-reset" class="btn-secondary">Reset kart</button>
+      </div>
+      <p id="pause-keys" class="fine" hidden>Keys: W and S throttle and brake, A and D steer, Space handbrake, R reset, P pause.</p>
+      <p class="fine">Model, not measurement. <span class="version"></span></p>
+    </div>
+  </section>
+
+  <section id="scr-rotate" class="overlay overlay-solid" aria-label="Rotate the phone" hidden>
+    <div class="panel">
+      <div class="phone-glyph" aria-hidden="true"></div>
+      <h2>Turn your phone sideways</h2>
+      <p>The rig pauses until the phone is in landscape.</p>
+    </div>
+  </section>
+
+  <div id="error" class="error" role="alert" hidden></div>
+</div>
+</body>
+</html>

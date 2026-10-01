@@ -1,0 +1,14 @@
+{
+  "name": "Drift kart",
+  "short_name": "Kart",
+  "description": "Tilt-steered drift kart, one real build, two real circuits.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#16181b",
+  "theme_color": "#16181b",
+  "icons": [
+    { "src": "./icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

@@ -1,0 +1,1348 @@
+{
+ "winton.national": [
+  {
+   "id": "S1",
+   "name": "Winton National S1: T1 to T3",
+   "startS": 200,
+   "endS": 730,
+   "launchS": 160,
+   "length": 530,
+   "complexes": 2,
+   "namedCorners": [
+    "T1",
+    "T2",
+    "T3"
+   ],
+   "corners": [
+    {
+     "apexS": 260,
+     "complex": 0,
+     "hand": "left",
+     "radius": 40.36,
+     "turnDeg": 59,
+     "promoted": true,
+     "name": "T1",
+     "clip": {
+      "s": 260,
+      "x": -158.66,
+      "y": 203.39,
+      "heading": 2.62727,
+      "o": 3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 233.5,
+      "x": -134.59,
+      "y": 190.68,
+      "o": -4.5
+     },
+     "exitRef": {
+      "s": 286.5,
+      "x": -182.75,
+      "y": 216.15,
+      "o": -4.5
+     }
+    },
+    {
+     "apexS": 335,
+     "complex": 0,
+     "hand": "right",
+     "radius": 38.31,
+     "turnDeg": -7,
+     "clip": {
+      "s": 335,
+      "x": -229.22,
+      "y": 209.29,
+      "heading": 2.89905,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 308.5,
+      "x": -202.77,
+      "y": 202.86,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 361.5,
+      "x": -255.76,
+      "y": 215.58,
+      "o": 4.5
+     }
+    },
+    {
+     "apexS": 670,
+     "complex": 1,
+     "hand": "right",
+     "radius": 33.96,
+     "turnDeg": -77,
+     "clip": {
+      "s": 670,
+      "x": -395.42,
+      "y": 471.04,
+      "heading": 0.77688,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 643.5,
+      "x": -413.84,
+      "y": 450.85,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 696.5,
+      "x": -376.28,
+      "y": 489.8,
+      "o": 4.5
+     }
+    }
+   ],
+   "policy": [
+    "promoted",
+    "overlap"
+   ],
+   "targetT": 200,
+   "targetTPlaceholder": true
+  },
+  {
+   "id": "S2",
+   "name": "Winton National S2: T3 to T4",
+   "startS": 610,
+   "endS": 865,
+   "launchS": 570,
+   "length": 255,
+   "complexes": 2,
+   "namedCorners": [
+    "T3",
+    "T4"
+   ],
+   "corners": [
+    {
+     "apexS": 670,
+     "complex": 0,
+     "hand": "right",
+     "radius": 33.96,
+     "turnDeg": -77,
+     "clip": {
+      "s": 670,
+      "x": -395.42,
+      "y": 471.04,
+      "heading": 0.77688,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 643.5,
+      "x": -413.84,
+      "y": 450.85,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 696.5,
+      "x": -376.28,
+      "y": 489.8,
+      "o": 4.5
+     }
+    },
+    {
+     "apexS": 805,
+     "complex": 1,
+     "hand": "right",
+     "radius": 39.67,
+     "turnDeg": -14,
+     "clip": {
+      "s": 805,
+      "x": -273.98,
+      "y": 516.67,
+      "heading": -0.22041,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 778.5,
+      "x": -300.71,
+      "y": 521.67,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 831.5,
+      "x": -247.61,
+      "y": 509.69,
+      "o": 4.5
+     }
+    }
+   ],
+   "policy": [
+    "overlap"
+   ],
+   "targetT": 200,
+   "targetTPlaceholder": true
+  },
+  {
+   "id": "S3",
+   "name": "Winton National S3: T5 to T7",
+   "startS": 1055,
+   "endS": 1515,
+   "launchS": 1015,
+   "length": 460,
+   "complexes": 3,
+   "namedCorners": [
+    "T5",
+    "T6",
+    "T7"
+   ],
+   "corners": [
+    {
+     "apexS": 1115,
+     "complex": 0,
+     "hand": "left",
+     "radius": 89.92,
+     "turnDeg": 43,
+     "promoted": true,
+     "name": "T5",
+     "clip": {
+      "s": 1115,
+      "x": -67.52,
+      "y": 304.8,
+      "heading": -0.12724,
+      "o": 3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 1088.5,
+      "x": -95.17,
+      "y": 303.39,
+      "o": -4.5
+     },
+     "exitRef": {
+      "s": 1141.5,
+      "x": -40.75,
+      "y": 297.83,
+      "o": -4.5
+     }
+    },
+    {
+     "apexS": 1240,
+     "complex": 1,
+     "hand": "left",
+     "radius": 50.62,
+     "turnDeg": 32,
+     "promoted": true,
+     "name": "T6",
+     "clip": {
+      "s": 1240,
+      "x": 38.38,
+      "y": 352.28,
+      "heading": 1.01798,
+      "o": 3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 1213.5,
+      "x": 26.47,
+      "y": 327.4,
+      "o": -4.5
+     },
+     "exitRef": {
+      "s": 1266.5,
+      "x": 54.05,
+      "y": 374.76,
+      "o": -4.5
+     }
+    },
+    {
+     "apexS": 1455,
+     "complex": 2,
+     "hand": "right",
+     "radius": 18.6,
+     "turnDeg": -105,
+     "clip": {
+      "s": 1455,
+      "x": 174.17,
+      "y": 473.55,
+      "heading": -0.93169,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 1428.5,
+      "x": 152.64,
+      "y": 488.18,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 1481.5,
+      "x": 182.04,
+      "y": 448.88,
+      "o": 4.5
+     }
+    }
+   ],
+   "policy": [
+    "promoted"
+   ],
+   "targetT": 300,
+   "targetTPlaceholder": true
+  },
+  {
+   "id": "S4",
+   "name": "Winton National S4: T8 to T10",
+   "startS": 1555,
+   "endS": 2165,
+   "launchS": 1515,
+   "length": 610,
+   "complexes": 3,
+   "namedCorners": [
+    "T8",
+    "T9",
+    "T10"
+   ],
+   "corners": [
+    {
+     "apexS": 1615,
+     "complex": 0,
+     "hand": "left",
+     "radius": 34.11,
+     "turnDeg": 24,
+     "clip": {
+      "s": 1615,
+      "x": 157.46,
+      "y": 334.82,
+      "heading": -0.65101,
+      "o": 3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 1588.5,
+      "x": 136.08,
+      "y": 352.07,
+      "o": -4.5
+     },
+     "exitRef": {
+      "s": 1641.5,
+      "x": 180.16,
+      "y": 319.67,
+      "o": -4.5
+     }
+    },
+    {
+     "apexS": 1645,
+     "complex": 0,
+     "hand": "left",
+     "radius": 39.08,
+     "turnDeg": 15,
+     "clip": {
+      "s": 1645,
+      "x": 183.31,
+      "y": 328,
+      "heading": 0.09653,
+      "o": 3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 1618.5,
+      "x": 156.01,
+      "y": 326.1,
+      "o": -4.5
+     },
+     "exitRef": {
+      "s": 1671.5,
+      "x": 210.36,
+      "y": 330.84,
+      "o": -4.5
+     }
+    },
+    {
+     "apexS": 1745,
+     "complex": 1,
+     "hand": "right",
+     "radius": 22.78,
+     "turnDeg": -142,
+     "clip": {
+      "s": 1745,
+      "x": 269.58,
+      "y": 341.57,
+      "heading": -0.95608,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 1718.5,
+      "x": 249.36,
+      "y": 358.7,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 1771.5,
+      "x": 279.54,
+      "y": 316.82,
+      "o": 4.5
+     }
+    },
+    {
+     "apexS": 2105,
+     "complex": 2,
+     "hand": "left",
+     "radius": 23.25,
+     "turnDeg": 85,
+     "clip": {
+      "s": 2105,
+      "x": -10.57,
+      "y": 155.17,
+      "heading": -2.09562,
+      "o": 3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 2078.5,
+      "x": 5.46,
+      "y": 176.13,
+      "o": -4.5
+     },
+     "exitRef": {
+      "s": 2131.5,
+      "x": -17.26,
+      "y": 129.52,
+      "o": -4.5
+     }
+    }
+   ],
+   "policy": [
+    "exception"
+   ],
+   "lengthException": {
+    "maxLength": 610,
+    "reason": "T10 is isolated; corner positions are uncertain by 20 to 30 m, so the 600 m cap is relaxed by 10 m for this sector only"
+   },
+   "targetT": 300,
+   "targetTPlaceholder": true
+  },
+  {
+   "id": "S5",
+   "name": "Winton National S5: T11 to T12",
+   "startS": 2480,
+   "endS": 2730,
+   "launchS": 2440,
+   "length": 250,
+   "complexes": 2,
+   "namedCorners": [
+    "T11",
+    "T12"
+   ],
+   "corners": [
+    {
+     "apexS": 2555,
+     "complex": 0,
+     "hand": "right",
+     "radius": 24.42,
+     "turnDeg": -71,
+     "clip": {
+      "s": 2555,
+      "x": 277.69,
+      "y": -168.59,
+      "heading": -1.62403,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 2528.5,
+      "x": 273.89,
+      "y": -142.53,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 2581.5,
+      "x": 271.21,
+      "y": -194.4,
+      "o": 4.5
+     }
+    },
+    {
+     "apexS": 2670,
+     "complex": 1,
+     "hand": "right",
+     "radius": 20.38,
+     "turnDeg": -71,
+     "clip": {
+      "s": 2670,
+      "x": 197.11,
+      "y": -238.05,
+      "heading": 3.1317,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 2643.5,
+      "x": 222.77,
+      "y": -233.21,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 2696.5,
+      "x": 172.12,
+      "y": -230.61,
+      "o": 4.5
+     }
+    }
+   ],
+   "policy": [
+    "standard"
+   ],
+   "targetT": 200,
+   "targetTPlaceholder": true
+  }
+ ],
+ "winton.club": [
+  {
+   "id": "S1",
+   "name": "Winton Club S1: T1 to T2",
+   "startS": 115,
+   "endS": 370,
+   "launchS": 75,
+   "length": 255,
+   "complexes": 2,
+   "namedCorners": [
+    "T1",
+    "T2"
+   ],
+   "corners": [
+    {
+     "apexS": 175,
+     "complex": 0,
+     "hand": "right",
+     "radius": 33.85,
+     "turnDeg": -77,
+     "clip": {
+      "s": 175,
+      "x": -62.14,
+      "y": 145.11,
+      "heading": 0.75829,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 148.5,
+      "x": -80.85,
+      "y": 125.2,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 201.5,
+      "x": -42.84,
+      "y": 163.74,
+      "o": 4.5
+     }
+    },
+    {
+     "apexS": 310,
+     "complex": 1,
+     "hand": "right",
+     "radius": 39.64,
+     "turnDeg": -14,
+     "clip": {
+      "s": 310,
+      "x": 59.44,
+      "y": 190.27,
+      "heading": -0.23477,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 283.5,
+      "x": 32.76,
+      "y": 195.61,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 336.5,
+      "x": 85.71,
+      "y": 182.96,
+      "o": 4.5
+     }
+    }
+   ],
+   "policy": [
+    "standard"
+   ],
+   "targetT": 200,
+   "targetTPlaceholder": true
+  },
+  {
+   "id": "S2",
+   "name": "Winton Club S2: T3 to T4",
+   "startS": 555,
+   "endS": 805,
+   "launchS": 515,
+   "length": 250,
+   "complexes": 2,
+   "namedCorners": [
+    "T3",
+    "T4"
+   ],
+   "corners": [
+    {
+     "apexS": 620,
+     "complex": 0,
+     "hand": "left",
+     "radius": 88.9,
+     "turnDeg": 42,
+     "promoted": true,
+     "name": "T3",
+     "clip": {
+      "s": 620,
+      "x": 265.94,
+      "y": -21.54,
+      "heading": -0.11976,
+      "o": 3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 593.5,
+      "x": 238.3,
+      "y": -23.09,
+      "o": -4.5
+     },
+     "exitRef": {
+      "s": 646.5,
+      "x": 292.74,
+      "y": -28.33,
+      "o": -4.5
+     }
+    },
+    {
+     "apexS": 745,
+     "complex": 1,
+     "hand": "left",
+     "radius": 50.35,
+     "turnDeg": 32,
+     "promoted": true,
+     "name": "T4",
+     "clip": {
+      "s": 745,
+      "x": 371.57,
+      "y": 26.45,
+      "heading": 1.0304,
+      "o": 3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 718.5,
+      "x": 359.85,
+      "y": 1.51,
+      "o": -4.5
+     },
+     "exitRef": {
+      "s": 771.5,
+      "x": 387.04,
+      "y": 49.08,
+      "o": -4.5
+     }
+    }
+   ],
+   "policy": [
+    "promoted"
+   ],
+   "targetT": 200,
+   "targetTPlaceholder": true
+  },
+  {
+   "id": "S3",
+   "name": "Winton Club S3: T5 to T7",
+   "startS": 900,
+   "endS": 1312.99,
+   "launchS": 860,
+   "length": 412.99,
+   "complexes": 3,
+   "namedCorners": [
+    "T5",
+    "T6",
+    "T7"
+   ],
+   "corners": [
+    {
+     "apexS": 960,
+     "complex": 0,
+     "hand": "right",
+     "radius": 18.63,
+     "turnDeg": -105,
+     "clip": {
+      "s": 960,
+      "x": 507.34,
+      "y": 146.9,
+      "heading": -0.96474,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 933.5,
+      "x": 486.18,
+      "y": 161.95,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 986.5,
+      "x": 514.73,
+      "y": 122.03,
+      "o": 4.5
+     }
+    },
+    {
+     "apexS": 1120,
+     "complex": 1,
+     "hand": "left",
+     "radius": 34.08,
+     "turnDeg": 24,
+     "clip": {
+      "s": 1120,
+      "x": 490.76,
+      "y": 8.26,
+      "heading": -0.62567,
+      "o": 3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 1093.5,
+      "x": 469.18,
+      "y": 25.18,
+      "o": -4.5
+     },
+     "exitRef": {
+      "s": 1146.5,
+      "x": 513.72,
+      "y": -6.6,
+      "o": -4.5
+     }
+    },
+    {
+     "apexS": 1150,
+     "complex": 1,
+     "hand": "left",
+     "radius": 39.17,
+     "turnDeg": 15,
+     "clip": {
+      "s": 1150,
+      "x": 516.74,
+      "y": 1.78,
+      "heading": 0.11079,
+      "o": 3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 1123.5,
+      "x": 489.5,
+      "y": -0.48,
+      "o": -4.5
+     },
+     "exitRef": {
+      "s": 1176.5,
+      "x": 543.75,
+      "y": 4.9,
+      "o": -4.5
+     }
+    },
+    {
+     "apexS": 1250,
+     "complex": 2,
+     "hand": "right",
+     "radius": 22.87,
+     "turnDeg": -142,
+     "clip": {
+      "s": 1250,
+      "x": 602.77,
+      "y": 14.89,
+      "heading": -0.97909,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 1223.5,
+      "x": 582.93,
+      "y": 32.42,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 1276.5,
+      "x": 612.22,
+      "y": -10.08,
+      "o": 4.5
+     }
+    }
+   ],
+   "policy": [
+    "standard"
+   ],
+   "targetT": 300,
+   "targetTPlaceholder": true
+  },
+  {
+   "id": "S4",
+   "name": "Winton Club S4: T8 to T10",
+   "startS": 1540,
+   "endS": 1920,
+   "launchS": 1500,
+   "length": 380,
+   "complexes": 2,
+   "namedCorners": [
+    "T8",
+    "T9",
+    "T10"
+   ],
+   "corners": [
+    {
+     "apexS": 1600,
+     "complex": 0,
+     "hand": "left",
+     "radius": 359.93,
+     "turnDeg": 2,
+     "promoted": true,
+     "name": "T8",
+     "clip": {
+      "s": 1600,
+      "x": 327,
+      "y": -165.24,
+      "heading": -2.6436,
+      "o": 3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 1573.5,
+      "x": 346.79,
+      "y": -145.9,
+      "o": -4.5
+     },
+     "exitRef": {
+      "s": 1626.5,
+      "x": 299.87,
+      "y": -170.6,
+      "o": -4.5
+     }
+    },
+    {
+     "apexS": 1710,
+     "complex": 1,
+     "hand": "right",
+     "radius": 29.77,
+     "turnDeg": -18,
+     "clip": {
+      "s": 1710,
+      "x": 226.49,
+      "y": -177.24,
+      "heading": 2.43892,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 1683.5,
+      "x": 247.67,
+      "y": -194.22,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 1736.5,
+      "x": 204.85,
+      "y": -161.19,
+      "o": 4.5
+     }
+    },
+    {
+     "apexS": 1790,
+     "complex": 1,
+     "hand": "left",
+     "radius": 40.11,
+     "turnDeg": 62,
+     "promoted": true,
+     "name": "T9",
+     "clip": {
+      "s": 1790,
+      "x": 172.51,
+      "y": -121.96,
+      "heading": 2.69258,
+      "o": 3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 1763.5,
+      "x": 197.01,
+      "y": -133.74,
+      "o": -4.5
+     },
+     "exitRef": {
+      "s": 1816.5,
+      "x": 147.74,
+      "y": -110.33,
+      "o": -4.5
+     }
+    },
+    {
+     "apexS": 1860,
+     "complex": 1,
+     "hand": "right",
+     "radius": 38.98,
+     "turnDeg": -15,
+     "clip": {
+      "s": 1860,
+      "x": 106.12,
+      "y": -117.47,
+      "heading": 2.98245,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 1833.5,
+      "x": 132.82,
+      "y": -122.67,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 1886.5,
+      "x": 79.44,
+      "y": -112.61,
+      "o": 4.5
+     }
+    }
+   ],
+   "policy": [
+    "promoted"
+   ],
+   "targetT": 200,
+   "targetTPlaceholder": true
+  }
+ ],
+ "wakefield.pre2022": [
+  {
+   "id": "S1",
+   "name": "Wakefield S1: T1 to T2",
+   "startS": 80,
+   "endS": 340,
+   "launchS": 40,
+   "length": 260,
+   "complexes": 2,
+   "namedCorners": [
+    "T1",
+    "T2"
+   ],
+   "corners": [
+    {
+     "apexS": 140,
+     "complex": 0,
+     "hand": "right",
+     "radius": 119.51,
+     "turnDeg": -22,
+     "promoted": true,
+     "name": "T1",
+     "clip": {
+      "s": 140,
+      "x": 48.1,
+      "y": 130.31,
+      "heading": 1.02175,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 113.5,
+      "x": 28.99,
+      "y": 110.09,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 166.5,
+      "x": 57.7,
+      "y": 156.17,
+      "o": 4.5
+     }
+    },
+    {
+     "apexS": 280,
+     "complex": 1,
+     "hand": "right",
+     "radius": 33.21,
+     "turnDeg": -41,
+     "clip": {
+      "s": 280,
+      "x": 146.57,
+      "y": 222.31,
+      "heading": 0.10347,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 253.5,
+      "x": 119.98,
+      "y": 217.89,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 306.5,
+      "x": 173.47,
+      "y": 222.99,
+      "o": 4.5
+     }
+    }
+   ],
+   "policy": [
+    "promoted"
+   ],
+   "targetT": 200,
+   "targetTPlaceholder": true
+  },
+  {
+   "id": "S2",
+   "name": "Wakefield S2: T3 to T5",
+   "startS": 545,
+   "endS": 875,
+   "launchS": 505,
+   "length": 330,
+   "complexes": 3,
+   "namedCorners": [
+    "T3",
+    "T4",
+    "T5"
+   ],
+   "corners": [
+    {
+     "apexS": 605,
+     "complex": 0,
+     "hand": "left",
+     "radius": 42.65,
+     "turnDeg": 38,
+     "promoted": true,
+     "name": "T3",
+     "clip": {
+      "s": 605,
+      "x": 330.23,
+      "y": -26.91,
+      "heading": -0.88584,
+      "o": 3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 578.5,
+      "x": 312.44,
+      "y": -6.61,
+      "o": -4.5
+     },
+     "exitRef": {
+      "s": 631.5,
+      "x": 346.35,
+      "y": -49.19,
+      "o": -4.5
+     }
+    },
+    {
+     "apexS": 710,
+     "complex": 1,
+     "hand": "right",
+     "radius": 31.01,
+     "turnDeg": -26,
+     "clip": {
+      "s": 710,
+      "x": 415.98,
+      "y": -81.48,
+      "heading": -0.83811,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 683.5,
+      "x": 397.72,
+      "y": -61.86,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 736.5,
+      "x": 433.38,
+      "y": -102.24,
+      "o": 4.5
+     }
+    },
+    {
+     "apexS": 815,
+     "complex": 2,
+     "hand": "right",
+     "radius": 26.52,
+     "turnDeg": -39,
+     "clip": {
+      "s": 815,
+      "x": 412.17,
+      "y": -176.21,
+      "heading": -2.30547,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 788.5,
+      "x": 429.51,
+      "y": -155.41,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 841.5,
+      "x": 390.94,
+      "y": -192.39,
+      "o": 4.5
+     }
+    }
+   ],
+   "policy": [
+    "promoted"
+   ],
+   "targetT": 300,
+   "targetTPlaceholder": true
+  },
+  {
+   "id": "S3",
+   "name": "Wakefield S3: T6 to T8",
+   "startS": 890,
+   "endS": 1275,
+   "launchS": 850,
+   "length": 385,
+   "complexes": 3,
+   "namedCorners": [
+    "T6",
+    "T7",
+    "T8"
+   ],
+   "corners": [
+    {
+     "apexS": 950,
+     "complex": 0,
+     "hand": "right",
+     "radius": 47.69,
+     "turnDeg": -33,
+     "promoted": true,
+     "name": "T6",
+     "clip": {
+      "s": 950,
+      "x": 287.47,
+      "y": -159.29,
+      "heading": 2.63692,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 923.5,
+      "x": 309.76,
+      "y": -174.73,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 976.5,
+      "x": 262.53,
+      "y": -147.83,
+      "o": 4.5
+     }
+    },
+    {
+     "apexS": 1075,
+     "complex": 1,
+     "hand": "left",
+     "radius": 109.85,
+     "turnDeg": 12,
+     "promoted": true,
+     "name": "T7",
+     "clip": {
+      "s": 1075,
+      "x": 237.04,
+      "y": -52.65,
+      "heading": 1.86326,
+      "o": 3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 1048.5,
+      "x": 249.12,
+      "y": -77.31,
+      "o": -4.5
+     },
+     "exitRef": {
+      "s": 1101.5,
+      "x": 235.72,
+      "y": -24.93,
+      "o": -4.5
+     }
+    },
+    {
+     "apexS": 1215,
+     "complex": 2,
+     "hand": "left",
+     "radius": 24.94,
+     "turnDeg": 72,
+     "clip": {
+      "s": 1215,
+      "x": 163.18,
+      "y": 54.68,
+      "heading": -3.11036,
+      "o": 3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 1188.5,
+      "x": 189.22,
+      "y": 50.13,
+      "o": -4.5
+     },
+     "exitRef": {
+      "s": 1241.5,
+      "x": 137.25,
+      "y": 49.14,
+      "o": -4.5
+     }
+    }
+   ],
+   "policy": [
+    "promoted"
+   ],
+   "targetT": 300,
+   "targetTPlaceholder": true
+  },
+  {
+   "id": "S4",
+   "name": "Wakefield S4: T9 to T10",
+   "startS": 1405,
+   "endS": 1865,
+   "launchS": 1365,
+   "length": 460,
+   "complexes": 2,
+   "namedCorners": [
+    "T9",
+    "T10"
+   ],
+   "corners": [
+    {
+     "apexS": 1465,
+     "complex": 0,
+     "hand": "right",
+     "radius": 48.84,
+     "turnDeg": -52,
+     "promoted": true,
+     "name": "T9",
+     "clip": {
+      "s": 1465,
+      "x": 144.06,
+      "y": -160.78,
+      "heading": -1.86416,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 1438.5,
+      "x": 153.55,
+      "y": -134.86,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 1491.5,
+      "x": 137.71,
+      "y": -187.31,
+      "o": 4.5
+     }
+    },
+    {
+     "apexS": 1805,
+     "complex": 1,
+     "hand": "right",
+     "radius": 16.58,
+     "turnDeg": -94,
+     "clip": {
+      "s": 1805,
+      "x": -99.45,
+      "y": -368.21,
+      "heading": 2.16173,
+      "o": -3.75,
+      "len": 3,
+      "wid": 1.5,
+      "insideOffset": 1
+     },
+     "entryRef": {
+      "s": 1778.5,
+      "x": -76.88,
+      "y": -380.46,
+      "o": 4.5
+     },
+     "exitRef": {
+      "s": 1831.5,
+      "x": -113.2,
+      "y": -344.86,
+      "o": 4.5
+     }
+    }
+   ],
+   "policy": [
+    "promoted"
+   ],
+   "targetT": 200,
+   "targetTPlaceholder": true
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "schema": 1,
+ "tracks": [
+  {
+   "key": "winton.national",
+   "id": "winton",
+   "layout": "national",
+   "file": "winton-national.json",
+   "name": "Winton Motor Raceway",
+   "layoutName": "National Circuit",
+   "label": "Winton National",
+   "lapLength": 2984.24,
+   "sectors": 5,
+   "publishable": true
+  },
+  {
+   "key": "winton.club",
+   "id": "winton",
+   "layout": "club",
+   "file": "winton-club.json",
+   "name": "Winton Motor Raceway",
+   "layoutName": "Club Circuit",
+   "label": "Winton Club",
+   "lapLength": 2023.35,
+   "sectors": 4,
+   "publishable": true
+  },
+  {
+   "key": "wakefield.pre2022",
+   "id": "wakefield",
+   "layout": "pre2022",
+   "file": "wakefield.json",
+   "name": "Wakefield Park",
+   "layoutName": "1994 to 2022 layout",
+   "label": "Wakefield Park (1994 to 2022 layout)",
+   "lapLength": 2193.37,
+   "sectors": 4,
+   "publishable": true
+  }
+ ]
+}
